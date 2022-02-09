@@ -1,4 +1,3 @@
-// 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`💚💚💚 Assertion Passed: ${actual} === ${expected}`);
@@ -17,29 +16,32 @@ const eqArrays = function(actual, expected) {
       }
     }
   } return true;
-  }
+};
 
-// Without function
-        // take in a source array and a itemsToRemove array (source, itemsToRemove)
-        // should return a new array with only those elements from source that are not present in the itemsToRemove array
+/* Without function
+---- Take in a source array and a itemsToRemove array (source, itemsToRemove)
+---- Should return a new array with only those elements from source that are not present in the itemsToRemove array
+*/
 
-let without = function (source, itemsToRemove) {
-for (i = 0; i < source.length; i++) {
-  for (j = 0; j < itemsToRemove.length; j++) {
-    if (source[i] === itemsToRemove[j]); {
-      source.splice(i, 1); // 
+let without = function(source, itemsToRemove) {
+  let i;
+  let j;
+  for (i = 0; i < source.length; i++) {
+    for (j = 0; j < itemsToRemove.length; j++) {
+      if (source[i] === itemsToRemove[j]); {
+        source.splice(i, 1);
+      }
     }
+    return source;
   }
-  return source;
-} 
-
-}; 
+};
 
 // Test code
 console.log(without([1, 2, 3], [1])); // => [2, 3]
 
 
 
-// Resources:
-    // Used a nested loop: https://www.w3schools.com/jsref/jsref_for.asp
-    // Splice method: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+/* Resources:
+--- Used a nested loop: https://www.w3schools.com/jsref/jsref_for.asp
+--- Splice method: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+*/
