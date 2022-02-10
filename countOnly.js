@@ -1,4 +1,4 @@
-// assertEqual function --- checks if the array variables are equak
+// assertEqual function --- checks if the array variables are equal
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`💚💚💚 Assertion Passed: ${actual} === ${expected}`);
