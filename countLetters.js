@@ -41,7 +41,7 @@ const countLetters = function(sentence) {
   let letterTotal = {};
 
   for (let letter of sentence) {
-    if (letter !== ' ') {
+    if (letter !== ' ') { // if letter does not equal a space continue on
       if (letterTotal[letter]) {
         letterTotal[letter] += 1;
       } else {
