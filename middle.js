@@ -1,23 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`💚💚💚 Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${actual}`);
-  }
-};
-
-const eqArrays = function(actual, expected) {
-  if (actual.length !== expected.length) {
-    return false;
-  } else {
-    for (let i = 0; i < actual.length; i++) {
-      if (actual[i] !== expected[i]) {
-        return false;
-      }
-    }
-  } return true;
-};
-
 /*
 Middle Function
 ---- return an array with only the middle element(s) of the provided array. 
@@ -50,30 +30,10 @@ let middle = function (startingArray) {
     // return ['odd'];
   }
   else {
-    let first = startingArray.length / 2;
-    let second = startingArray.length / 2 - 1;
+    let first = startingArray.length / 2 - 1;
+    let second = startingArray.length / 2;
     return [startingArray[first], startingArray[second]];
   }
 };
 
-
-/*
-// TEST/ASSERTION FUNCTIONS
-const eqArrays = function(...) {
-  //...
-}
-
-const assertArraysEqual = function(actual, expected) {
-  //...
-}
-
-// ACTUAL FUNCTION
-const middle = function(array) {
-  //...
-}
-
-// TEST CODE
-*/
-console.log(middle([1, 2, 3, 4, 5])); // testing odd
-console.log(middle([1, 2, 3, 4, 5, 6])); // testing even
-console.log(middle([1, 2])); // testing <= 2
+module.exports = middle;
