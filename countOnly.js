@@ -85,3 +85,5 @@ Do NOT use assertEqual to compare the resulting object (result1) directly.
 --- We need to do this with objects to make our test code cleaner.
 --- Until we have our specialized assertion function, we will do it this, more cumbersome way.
 */
+
+module.exports = countOnly;

@@ -37,7 +37,7 @@ let without = function(source, itemsToRemove) {
 };
 
 // Test code
-console.log(without([1, 2, 3], [1])); // => [2, 3]
+// console.log(without([1, 2, 3], [1])); // => [2, 3]
 
 
 
@@ -45,3 +45,5 @@ console.log(without([1, 2, 3], [1])); // => [2, 3]
 --- Used a nested loop: https://www.w3schools.com/jsref/jsref_for.asp
 --- Splice method: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 */
+
+module.exports = without;

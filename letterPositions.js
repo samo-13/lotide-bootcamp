@@ -63,3 +63,5 @@ assertArraysEqual(letterPositions("hello").e, [1]);
 
 // Testing code
 // Ask why when I do results.letter on lines 43 and 46 it returns [4] - is this because it literally counts the number of letters in hello?
+
+module.exports = letterPositions;

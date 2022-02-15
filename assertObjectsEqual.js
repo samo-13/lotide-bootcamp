@@ -13,6 +13,8 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
+module.exports = assertObjectsEqual;
+
 // assertObjectsEqual function helps easily test functions that return objects
 // takes in two objects and console.log's an appropriate message to the console.
 
